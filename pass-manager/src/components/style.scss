@@ -1,0 +1,187 @@
+.form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  margin: 100px auto;
+  padding: 25px;
+  border-radius: 20px;
+  height: 300px;
+  background-color: #FFFF;
+  form{
+    display: flex;
+    flex-direction: column;
+    .error{
+      color: red;
+    }
+    span{
+      text-align: center;
+    }
+    input{
+      border-radius: 10px;
+      font-size: 16px;
+      height: 22px;
+      width: 200px;
+      padding: 2px 6px;
+      margin: 10px 0;
+      background-color: #ffff;
+      border-color: lightgrey;
+      &:focus{
+        outline: none;
+      }
+    }
+    button{
+      width: 100%;
+      padding: 7px 4px;
+      border-radius: 15px;
+      font-size: 16px;
+      border: none;
+      background-color: #ff9c70;
+      box-shadow: 2px 6px 9px -4px rgba(0,0,0,0.75);
+      transition: .1s;
+      color: #fff;
+      &:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        transition: .1s;
+      }
+      &:hover{
+        box-shadow: 2px 6px 7px 1px rgba(0,0,0,0.75);
+        transition: .4s;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+.password_manager{
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  &-list{
+    display: inline-block;
+    position: relative;
+    overflow-y: auto;
+    border-right: 1px solid #ffffff;
+    width: 30%;
+    height: 100vh;
+    box-shadow: 9px 0 9px -4px rgba(0,0,0,0.75);
+    &-create{
+      position: absolute;
+      right: 0;
+      top: 25px;
+    }
+    ul{
+      list-style-type: none;
+      padding: 60px 0 0 0;
+      div{
+        position: relative;
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 100%;
+        li{
+          text-align: center;
+          padding: 10px 0;
+          span{
+            display: inline-block;
+          }
+          p{
+            display: inline-block;
+          }
+          span:nth-child(5){
+            font-weight: bold;
+            margin: 10px;
+          }
+          h3{
+            display: inline-block;
+            margin: 10px;
+          }
+        }
+        button{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      div:nth-child(1){
+        border-top: 2px solid white;
+      }
+    }
+  }
+  &-main{
+    display: inline-block;
+    width: 69%;
+    div{
+      background-color: white;
+      height: 400px;
+      width: 99%;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+      height: 95vh;
+      form{
+        width:100%;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input {
+          border-radius: 10px;
+          font-size: 16px;
+          height: 22px;
+          width: 200px;
+          padding: 2px 6px;
+          margin: 10px 0;
+          background-color: #ffff;
+          border-color: lightgrey;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        p{
+          text-align: center;
+          input[type="checkbox"]{
+            width: 20px;
+            vertical-align: sub;
+            margin-left: 5px;
+          }
+        }
+        button{
+          width: 216px;
+          position: relative;
+          left: auto;
+          padding: 7px 4px;
+          border-radius: 15px;
+          font-size: 16px;
+          border: none;
+          background-color: #ff9c70;
+          box-shadow: 2px 6px 9px -4px rgba(0, 0, 0, 0.75);
+          transition: .1s;
+          color: #fff;
+          &:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            transition: .1s;
+          }
+          &:hover{
+            box-shadow: 2px 6px 7px 1px rgba(0,0,0,0.75);
+            transition: .4s;
+          }
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

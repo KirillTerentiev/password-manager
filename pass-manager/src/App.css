@@ -1,0 +1,29 @@
+body{
+    background-color: #ff9c70;
+    height: 100vh;
+}
+.links{
+    position: absolute;
+    z-index: 100;
+    top: 7px;
+}
+a{
+    flex-direction: row;
+    padding: 3px 4px;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    width: fit-content;
+    background-color: white;
+    margin-top: 5px;
+}
+a:nth-child(1){
+    border-radius: 15px 0 0 15px;
+    border-right: 1px solid black;
+    margin-right: 0.5px;
+}
+a:nth-child(2){
+    border-radius: 0 15px 15px 0;
+    border-left: 1px solid black;
+    margin-left: 0.5px;
+}
